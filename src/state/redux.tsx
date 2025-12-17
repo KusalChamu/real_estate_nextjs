@@ -33,12 +33,15 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 export default function StoreProvider({
   children,
 }: {
+  //allow any JSX to wrapped by redux
   children: React.ReactNode;
 }) {
   const storeRef = useRef<AppStore | null>(null);
+  //if there is no store create one and if there is one then reuse it
   if (!storeRef.current) {
     storeRef.current = makeStore();
     setupListeners(storeRef.current.dispatch);
   }
+  //redux store inject into react
   return <Provider store={storeRef.current}>{children}</Provider>;
 }
