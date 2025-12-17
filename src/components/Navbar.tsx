@@ -40,8 +40,8 @@ const Navbar = () => {
                 className="text-white border-white bg-transparent hover:bg-white hover:text-primary-500 rounded-lg">Sign In</Button>
             </Link>
             <Link href="/signup">
-                <Button variant="outline"
-                className="text-white border-white bg-transparent hover:bg-secondary-500 hover:text-primary-500 rounded-lg">Sign Up</Button>
+                <Button variant="secondary"
+                className="text-white border-white bg-pink-600 hover:bg-secondary-500 hover:text-primary-500 rounded-lg">Sign Up</Button>
             </Link>
         </div>
       </div>
