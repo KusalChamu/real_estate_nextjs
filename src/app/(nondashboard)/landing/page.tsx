@@ -3,12 +3,15 @@
 import React from 'react'
 import HeroSection from './HeroSection'
 import Featuresection from './Featuresection'
+import DiscoverSection from './DiscoverSection'
+
 
 const landing = () => {
   return (
     <div>
       <HeroSection />
       <Featuresection />
+      <DiscoverSection />
       </div>
   )
 }
